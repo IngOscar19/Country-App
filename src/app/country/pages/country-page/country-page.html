@@ -1,1 +1,26 @@
-<p>country-page works!</p>,
+
+<app-menu-head class="text-lg"></app-menu-head>
+
+
+<main class="min-h-screen bg-base-200 pt-28 pb-12 px-8 flex flex-col items-center">
+  <section class="w-full max-w-7xl">
+    
+   
+    <div class="mb-10">
+      <app-search-input class="text-lg"></app-search-input>
+    </div>
+
+    
+     <h1 class="text-4xl font-bold mb-8 text-primary text-center">
+        Países Disponibles
+    </h1>
+    <div class="bg-base-100 rounded-3xl shadow-2xl p-8 border border-base-300">
+      <app-country-list class="text-lg"></app-country-list>
+      <router-outlet></router-outlet>
+    </div>
+    
+  </section>
+</main>
+
+
+<app-footer class="text-base mt-10"></app-footer>
